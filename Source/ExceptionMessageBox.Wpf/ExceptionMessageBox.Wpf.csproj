@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!--<TargetFramework>net5.0-windows</TargetFramework>-->
+      <TargetFrameworks>netcoreapp3.1;net5.0-windows</TargetFrameworks>
+    <UseWPF>true</UseWPF>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Authors>Ryan Boggs</Authors>
+    <PackageTags>wpf exception messagebox</PackageTags>
+    <Nullable>enable</Nullable>
+    <NoWarn>IDE0130</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="5.0.2" />
+  </ItemGroup>
+
+</Project>
