@@ -47,14 +47,10 @@
         <ScrollViewer
             Grid.Column="1"
             Grid.Row="1"
-            Margin="10,0,10,10"
-            HorizontalScrollBarVisibility="Hidden"
-            CanContentScroll="True">
+            Margin="10,0,10,10">
             <TextBlock
                 Text="{Binding Path=Message}"
                 FontSize="12"
-                VerticalAlignment="Stretch"
-                HorizontalAlignment="Stretch"
                 TextWrapping="WrapWithOverflow"/>
         </ScrollViewer>
         <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
@@ -66,12 +62,12 @@
             <Grid.Resources>
                 <ResourceDictionary>
                     <ResourceDictionary.MergedDictionaries>
-                        <ResourceDictionary Source="ExceptionMessageBox.Wpf;component/ImageDictionary.xaml"/>
+                        <ResourceDictionary Source="/ExceptionMessageBox.Wpf;component/ImageDictionary.xaml"/>
                     </ResourceDictionary.MergedDictionaries>
                 </ResourceDictionary>
             </Grid.Resources>
             <Button 
-                Visibility="{Binding Path=HelpIsVisible, Converter={StaticResource BoolToVis}, FallbackValue=Hidden}"
+                Visibility="{Binding Path=HelpIsVisible, Converter={StaticResource BoolToVis}}"
                 Command="{Binding Path=OpenHelpLinkCommand}"
                 Grid.Column="0"
                 Height="22"
@@ -103,7 +99,7 @@
             </Button>
             <Button
                 Command="{Binding Path=CloseWindowCommand}"
-                CommandParameter="{Binding ElementName=ExceptionDetailsWindow}"
+                CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Window}}}"
                 Grid.Column="2"
                 Margin="5"
                 Height="23"

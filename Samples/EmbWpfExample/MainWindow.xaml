@@ -1,0 +1,58 @@
+﻿<Window x:Class="EmbWpfExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EmbWpfExample"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Exception Thrower" Height="250" Width="410">
+    <Window.DataContext>
+        <local:MainWindowViewModel/>
+    </Window.DataContext>
+    <WrapPanel Orientation="Horizontal" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <WrapPanel.Resources>
+            <Style TargetType="Button">
+                <Setter Property="Height" Value="75"/>
+                <Setter Property="Width" Value="100"/>
+                <Setter Property="Margin" Value="15"/>
+                <Setter Property="CommandParameter" Value="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Window}}}"/>
+            </Style>
+            <Style TargetType="TextBlock">
+                <Setter Property="TextWrapping" Value="WrapWithOverflow"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="TextAlignment" Value="Center"/>
+            </Style>
+        </WrapPanel.Resources>
+        <Button Command="{Binding NormalExample}">
+            <Button.Content>
+                <TextBlock>Default Settings Example</TextBlock>
+            </Button.Content>
+        </Button>
+        <Button Command="{Binding TitleExample}">
+            <Button.Content>
+                <TextBlock>Custom Title Example</TextBlock>
+            </Button.Content>
+        </Button>
+        <Button Command="{Binding InvalidExample}">
+            <Button.Content>
+                <TextBlock>Invalid Severity Example</TextBlock>
+            </Button.Content>
+        </Button>
+        <Button Command="{Binding WarningExample}">
+            <Button.Content>
+                <TextBlock>Warning Severity Example</TextBlock>
+            </Button.Content>
+        </Button>
+        <Button Command="{Binding InformationalExample}">
+            <Button.Content>
+                <TextBlock>Information Severity Example</TextBlock>
+            </Button.Content>
+        </Button>
+        <Button Command="{Binding AggregatedExample}">
+            <Button.Content>
+                <TextBlock>Aggregated Exception Example</TextBlock>
+            </Button.Content>
+        </Button>
+    </WrapPanel>
+</Window>

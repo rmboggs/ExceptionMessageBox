@@ -41,8 +41,8 @@
         </Rectangle>
     </Viewbox>
     
-    <Viewbox x:Key="StatusErrorImg" Width="16" Height="16" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-        <Rectangle Width="16" Height="16">
+    <Viewbox x:Key="StatusErrorImg" Width="48" Height="48" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+        <Rectangle Width="48" Height="48">
             <Rectangle.Fill>
                 <DrawingBrush>
                     <DrawingBrush.Drawing>
@@ -79,8 +79,8 @@
         </Rectangle>
     </Viewbox>
 
-    <Viewbox x:Key="StatusInfoImg" Width="16" Height="16" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-        <Rectangle Width="16" Height="16">
+    <Viewbox x:Key="StatusInfoImg" Width="48" Height="48" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+        <Rectangle Width="48" Height="48">
             <Rectangle.Fill>
                 <DrawingBrush>
                     <DrawingBrush.Drawing>
@@ -98,8 +98,8 @@
         </Rectangle>
     </Viewbox>
 
-    <Viewbox x:Key="StatusInvalidImg" Width="16" Height="16" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-        <Rectangle Width="16" Height="16">
+    <Viewbox x:Key="StatusInvalidImg" Width="48" Height="48" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+        <Rectangle Width="48" Height="48">
             <Rectangle.Fill>
                 <DrawingBrush>
                     <DrawingBrush.Drawing>
@@ -117,8 +117,8 @@
         </Rectangle>
     </Viewbox>
 
-    <Viewbox x:Key="StatusWarningImg" Width="16" Height="16" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-        <Rectangle Width="16" Height="16">
+    <Viewbox x:Key="StatusWarningImg" Width="48" Height="48" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+        <Rectangle Width="48" Height="48">
             <Rectangle.Fill>
                 <DrawingBrush>
                     <DrawingBrush.Drawing>

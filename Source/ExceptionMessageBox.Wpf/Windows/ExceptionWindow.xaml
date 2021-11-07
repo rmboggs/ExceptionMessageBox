@@ -11,16 +11,20 @@
         WindowStyle="ToolWindow"
         WindowStartupLocation="CenterOwner"
         Title="{Binding Path=WindowTitle}" 
+        Height="150"
         MinHeight="150"
+        MaxHeight="300"
+        MinWidth="625"
+        MaxWidth="625"
         Width="625">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/ExceptionMessageBox.Wpf;component/ImageDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
     <Grid>
-        <Grid.Resources>
-            <ResourceDictionary>
-                <ResourceDictionary.MergedDictionaries>
-                    <ResourceDictionary Source="ExceptionMessageBox.Wpf;component/ImageDictionary.xaml"/>
-                </ResourceDictionary.MergedDictionaries>
-            </ResourceDictionary>
-        </Grid.Resources>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.75*"/>
             <ColumnDefinition Width="3*"/>
@@ -36,6 +40,10 @@
             Grid.Row="0" 
             Grid.Column="0" 
             Margin="5"
+            Height="48"
+            Width="48"
+            VerticalContentAlignment="Stretch"
+            HorizontalContentAlignment="Stretch"
             VerticalAlignment="Center"
             HorizontalAlignment="Center">
             <ContentControl.Style>
@@ -62,7 +70,7 @@
             Grid.Column="1"
             Grid.Row="0"
             Grid.ColumnSpan="2"
-            TextWrapping="Wrap"
+            TextWrapping="WrapWithOverflow"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Center"
             Margin="5,15,25,15"/>
@@ -105,7 +113,7 @@
             <Button
                 Grid.Column="1"
                 Command="{Binding Path=DetailsCommand}"
-                CommandParameter="{Binding ElementName=ExceptionWindow}"
+                CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Window}}}"
                 ToolTip="Show exception details"
                 HorizontalAlignment="Left">
                 <StackPanel>
@@ -115,7 +123,7 @@
         </Grid>
         <Button
             Command="{Binding Path=CloseWindowCommand}"
-            CommandParameter="{Binding ElementName=ExceptionWindow}"
+            CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Window}}}"
             IsCancel="True"
             IsDefault="True"
             Content="OK"
