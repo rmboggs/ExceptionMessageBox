@@ -1,9 +1,9 @@
-﻿using ExceptionMessageBox.Wpf.Models;
-using ExceptionMessageBox.Wpf.Windows;
+using WpfExceptionMessageBox.Models;
+using WpfExceptionMessageBox.Windows;
 using System;
 using System.Windows;
 
-namespace ExceptionMessageBox.Wpf
+namespace WpfExceptionMessageBox
 {
     /// <summary>
     /// Exception Message Box entry class.

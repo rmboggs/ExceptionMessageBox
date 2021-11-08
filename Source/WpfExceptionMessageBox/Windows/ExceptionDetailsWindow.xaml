@@ -1,10 +1,10 @@
-﻿<Window x:Class="ExceptionMessageBox.Wpf.Windows.ExceptionDetailsWindow"
+<Window x:Class="WpfExceptionMessageBox.Windows.ExceptionDetailsWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ExceptionMessageBox.Wpf.Windows"
-        xmlns:c="clr-namespace:ExceptionMessageBox.Wpf.Controls"
+        xmlns:local="clr-namespace:WpfExceptionMessageBox.Windows"
+        xmlns:c="clr-namespace:WpfExceptionMessageBox.Controls"
         mc:Ignorable="d"
         x:ClassModifier="internal"
         Title="Additional Exception Details" 
@@ -62,7 +62,7 @@
             <Grid.Resources>
                 <ResourceDictionary>
                     <ResourceDictionary.MergedDictionaries>
-                        <ResourceDictionary Source="/ExceptionMessageBox.Wpf;component/ImageDictionary.xaml"/>
+                        <ResourceDictionary Source="/WpfExceptionMessageBox;component/ImageDictionary.xaml"/>
                     </ResourceDictionary.MergedDictionaries>
                 </ResourceDictionary>
             </Grid.Resources>

@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using System.Windows.Input;
 
-namespace ExceptionMessageBox.Wpf
+namespace WpfExceptionMessageBox
 {
     /// <summary>
     /// Basic <see cref="ICommand"/> object used for mvvm purposes.

@@ -1,4 +1,4 @@
-﻿namespace ExceptionMessageBox.Wpf
+namespace WpfExceptionMessageBox
 {
     /// <summary>
     /// Indicates the severity of the exception that was thrown.

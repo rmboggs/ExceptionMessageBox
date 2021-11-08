@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows;
 using System.Windows.Input;
 
-namespace ExceptionMessageBox.Wpf.Models
+namespace WpfExceptionMessageBox.Models
 {
     /// <summary>
     /// Base class to use when building MVVM objects for this project.

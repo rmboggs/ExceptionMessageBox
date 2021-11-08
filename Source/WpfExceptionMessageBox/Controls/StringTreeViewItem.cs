@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace ExceptionMessageBox.Wpf.Controls
+namespace WpfExceptionMessageBox.Controls
 {
     /// <summary>
     /// The <see cref="BasicTreeViewItem"/> containing <see cref="string"/>

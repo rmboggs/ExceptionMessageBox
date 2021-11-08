@@ -1,9 +1,9 @@
-﻿using ExceptionMessageBox.Wpf.Windows;
+using WpfExceptionMessageBox.Windows;
 using System;
 using System.Windows;
 using System.Windows.Input;
 
-namespace ExceptionMessageBox.Wpf.Models
+namespace WpfExceptionMessageBox.Models
 {
     /// <summary>
     /// The main view model responsible for the <see cref="ExceptionWindow"/>.

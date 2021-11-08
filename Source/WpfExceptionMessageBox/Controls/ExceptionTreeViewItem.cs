@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Documents;
 
-namespace ExceptionMessageBox.Wpf.Controls
+namespace WpfExceptionMessageBox.Controls
 {
     /// <summary>
     /// The <see cref="BasicTreeViewItem"/> containing <see cref="Exception"/> information

@@ -1,4 +1,4 @@
-﻿using ExceptionMessageBox.Wpf.Controls;
+using WpfExceptionMessageBox.Controls;
 using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Windows.Controls;
 using System.Windows.Input;
 
-namespace ExceptionMessageBox.Wpf.Models
+namespace WpfExceptionMessageBox.Models
 {
     /// <summary>
     /// The main view model responsible for the <see cref="Windows.ExceptionDetailsWindow"/>

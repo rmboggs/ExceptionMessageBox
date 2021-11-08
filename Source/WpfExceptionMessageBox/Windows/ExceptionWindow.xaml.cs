@@ -1,6 +1,6 @@
-﻿using System.Windows;
+using System.Windows;
 
-namespace ExceptionMessageBox.Wpf.Windows
+namespace WpfExceptionMessageBox.Windows
 {
     /// <summary>
     /// Interaction logic for ExceptionWindow.xaml

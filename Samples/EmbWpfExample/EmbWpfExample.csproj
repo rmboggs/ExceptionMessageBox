@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Source\ExceptionMessagebox.Wpf\ExceptionMessageBox.Wpf.csproj" />
+    <ProjectReference Include="..\..\Source\WpfExceptionMessageBox\WpfExceptionMessageBox.csproj" />
   </ItemGroup>
 
 </Project>

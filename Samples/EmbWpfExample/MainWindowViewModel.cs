@@ -4,7 +4,7 @@ using System.Windows;
 using System.Windows.Input;
 using Prism.Mvvm;
 using Prism.Commands;
-using E = ExceptionMessageBox.Wpf;
+using WpfExceptionMessageBox;
 
 namespace EmbWpfExample
 {
@@ -60,9 +60,9 @@ namespace EmbWpfExample
 
         #endregion
 
-        #region Private Instance Methods
+        #region Private Static Methods
 
-        private async Task Aggregated(Window owner)
+        private static async Task Aggregated(Window owner)
         {
             try
             {
@@ -81,9 +81,13 @@ namespace EmbWpfExample
             }
             catch (Exception e)
             {
-                _ = E.ExceptionMessageBox.Show(owner, e);
+                _ = ExceptionMessageBox.Show(owner, e);
             }
         }
+
+        #endregion
+
+        #region Private Instance Methods
 
         private void Informational(Window owner)
         {
@@ -93,7 +97,7 @@ namespace EmbWpfExample
             }
             catch (Exception e)
             {
-                _ = E.ExceptionMessageBox.Show(owner, e, E.ExceptionSeverity.Informational);
+                _ = ExceptionMessageBox.Show(owner, e, ExceptionSeverity.Informational);
             }
         }
 
@@ -106,7 +110,7 @@ namespace EmbWpfExample
             catch (Exception e)
             {
 
-                _ = E.ExceptionMessageBox.Show(owner, e, E.ExceptionSeverity.Invalid);
+                _ = ExceptionMessageBox.Show(owner, e, ExceptionSeverity.Invalid);
             }
         }
 
@@ -126,7 +130,7 @@ namespace EmbWpfExample
             }
             catch (Exception e)
             {
-                _ = E.ExceptionMessageBox.Show(owner, e);
+                _ = ExceptionMessageBox.Show(owner, e);
             }
         }
 
@@ -138,7 +142,7 @@ namespace EmbWpfExample
             }
             catch (Exception e)
             {
-                _ = E.ExceptionMessageBox.Show(owner, e, "Where did B: go?");
+                _ = ExceptionMessageBox.Show(owner, e, "Where did B: go?");
             }
         }
 
@@ -146,13 +150,13 @@ namespace EmbWpfExample
         {
             try
             {
-                OutOfMemoryException eee = new() { HelpLink = "https://stackoverflow.com/questions/10750849/how-to-make-textblock-scrollable-inwpf" };
+                OutOfMemoryException eee = new() { HelpLink = "https://dotnet.microsoft.com/" };
 
                 throw eee;
             }
             catch (Exception e)
             {
-                _ = E.ExceptionMessageBox.Show(owner, e, E.ExceptionSeverity.Warning);
+                _ = ExceptionMessageBox.Show(owner, e, ExceptionSeverity.Warning);
             }
         }
 

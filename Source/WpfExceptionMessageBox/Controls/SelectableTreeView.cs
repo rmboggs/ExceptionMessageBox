@@ -1,7 +1,7 @@
-﻿using System.Windows;
+using System.Windows;
 using System.Windows.Controls;
 
-namespace ExceptionMessageBox.Wpf.Controls
+namespace WpfExceptionMessageBox.Controls
 {
     /// <summary>
     /// A subclass of the <see cref="TreeView"/> control with access to 
