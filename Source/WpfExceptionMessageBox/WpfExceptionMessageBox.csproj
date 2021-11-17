@@ -7,6 +7,11 @@
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <ChangeLogFile>$(MSBuildProjectDirectory)/CHANGELOG.md</ChangeLogFile>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageReleaseNotes>$([System.IO.File]::ReadAllText($(ChangeLogFile)))</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
