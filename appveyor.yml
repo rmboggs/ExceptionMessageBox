@@ -10,7 +10,7 @@ install:
 
 build_script:
 - cmd: dotnet --info
-- cmd: dotnet tool list
+- cmd: dotnet tool restore
 - cmd: dotnet cake
 
 test: off
