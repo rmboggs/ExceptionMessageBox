@@ -1,0 +1,20 @@
+version: 1.0.0.{build}
+os: Visual Studio 2022
+
+# Only focus on the master branch
+branches:
+  only:
+  - main
+
+install:
+
+build_script:
+- cmd: dotnet --info
+- cmd: dotnet tool list
+- cmd: dotnet cake
+
+test: off
+
+artifacts:
+- path: artifacts/zip/*.zip
+- path: artifacts/nuget/*.nupkg
