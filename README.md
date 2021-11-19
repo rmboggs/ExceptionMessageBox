@@ -13,7 +13,7 @@ class that is bundled with the Microsoft Sql Server Management Studio applicatio
 This project will be divided into multiple parts based on the dotnet gui framework. The gui
 frameworks that are currently available are:
 
-* WPF
+* [WPF](https://github.com/rmboggs/ExceptionMessageBox/tree/main/Source/WpfExceptionMessageBox)
 
 There are plans to add gui support for the following frameworks:
 
