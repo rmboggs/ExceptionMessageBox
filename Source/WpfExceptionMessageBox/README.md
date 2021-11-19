@@ -30,11 +30,19 @@ message box title and severity icon that is displayed in the box.
 
 Default Display:
 
+![Default Display](https://github.com/rmboggs/ExceptionMessageBox/blob/main/Documentation/Images/Wpf/Default.PNG)
+
 Display with Informational severity:
+
+![Display with Informational severity](https://github.com/rmboggs/ExceptionMessageBox/blob/main/Documentation/Images/Wpf/Informational.PNG)
 
 Display with Warning severity:
 
+![Display with Warning severity](https://github.com/rmboggs/ExceptionMessageBox/blob/main/Documentation/Images/Wpf/Warning.PNG)
+
 Additional Exception Details Window:
+
+![Additional Exception Details Window](https://github.com/rmboggs/ExceptionMessageBox/blob/main/Documentation/Images/Wpf/AdditionalExceptionDetails.PNG)
 
 You can also provide additional help to the user by adding a link to additional help details to the thrown exception:
 
@@ -51,6 +59,8 @@ You can also provide additional help to the user by adding a link to additional 
 ```
 
 Additional Exception Details Window with Help button:
+
+![Additional Exception Details Window with Help button](https://github.com/rmboggs/ExceptionMessageBox/blob/main/Documentation/Images/Wpf/AdditionalExceptionDetailsWithHelp.PNG)
 
 The exception details can be copied from the message box so that they can be easily saved or emailed
 to someone else for additional analysis.
