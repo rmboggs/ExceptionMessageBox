@@ -37,7 +37,6 @@ var isRunningOnWindows = IsRunningOnWindows();
 var isRunningOnAppVeyor = BuildSystem.AppVeyor.IsRunningOnAppVeyor;
 var isPullRequest = BuildSystem.AppVeyor.Environment.PullRequest.IsPullRequest;
 var isMainRepo = StringComparer.OrdinalIgnoreCase.Equals(MainRepo, BuildSystem.AppVeyor.Environment.Repository.Name);
-var isMasterBranch = StringComparer.OrdinalIgnoreCase.Equals(MasterBranch, BuildSystem.AppVeyor.Environment.Repository.Branch);
 var isTagged = BuildSystem.AppVeyor.Environment.Repository.Tag.IsTag 
                && !string.IsNullOrWhiteSpace(BuildSystem.AppVeyor.Environment.Repository.Tag.Name);
 var isReleasable = StringComparer.OrdinalIgnoreCase.Equals(ReleasePlatform, platform) 
@@ -96,7 +95,6 @@ Information("IsRunningOnWindows: " + isRunningOnWindows);
 Information("IsRunningOnAppVeyor: " + isRunningOnAppVeyor);
 Information("IsPullRequest: " + isPullRequest);
 Information("IsMainRepo: " + isMainRepo);
-Information("IsMasterBranch: " + isMasterBranch);
 Information("IsTagged: " + isTagged);
 Information("IsReleasable: " + isReleasable);
 Information("IsMyGetRelease: " + isMyGetRelease);
