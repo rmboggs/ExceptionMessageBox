@@ -128,9 +128,9 @@ namespace WpfExceptionMessageBox.Models
             }
         }
 
-#endregion
+        #endregion
 
-#region Private Instance Methods
+        #region Private Instance Methods
 
         /// <summary>
         /// Creates a new observable collection of <see cref="BasicTreeViewItem"/> elements
@@ -228,6 +228,6 @@ namespace WpfExceptionMessageBox.Models
             _ = p.Start();
         }
 
-#endregion
+        #endregion
     }
 }

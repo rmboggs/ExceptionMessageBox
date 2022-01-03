@@ -113,7 +113,7 @@ namespace WpfExceptionMessageBox.Models
 
 #endregion
 
-#region Protected Instance Methods
+        #region Protected Instance Methods
 
         /// <summary>
         /// Closes the current window.
@@ -245,6 +245,6 @@ namespace WpfExceptionMessageBox.Models
         /// </param>
         protected void OnPropertyChanged(PropertyChangedEventArgs e) => PropertyChanged?.Invoke(this, e);
 
-#endregion
+        #endregion
     }
 }
