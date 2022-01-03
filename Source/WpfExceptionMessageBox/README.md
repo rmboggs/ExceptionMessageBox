@@ -5,7 +5,7 @@ The WPF Exception MessageBox is a custom gui MessageBox specifically designed to
 of an Exception object to the user for debugging purposes that targets the Microsoft Windows Presentation
 Framework (WPF).
 
-This project is currently available for Core 3.1 and NET 5.  Support for NET 6 will come out soon.
+This project is currently available for Framework 4.7.2 and 4.8, Core 3.1 and NET 5 and 6.
 
 To use the WPF Exception MessageBox, simply put this in a catch statement:
 
