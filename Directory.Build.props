@@ -3,8 +3,8 @@
   <PropertyGroup>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Authors>Ryan Boggs</Authors>
-    <Copyright>Copyright © 2021 Ryan Boggs and Contributors</Copyright>
-    <Version>1.0.0.0</Version>
+    <Copyright>Copyright © 2022 Ryan Boggs and Contributors</Copyright>
+    <Version>1.0.1.0</Version>
     <PackageOutputPath>../../artifacts/nuget</PackageOutputPath>
     <PackageProjectUrl>https://github.com/rmboggs/ExceptionMessageBox</PackageProjectUrl>
     <RepositoryUrl>https://github.com/rmboggs/ExceptionMessageBox</RepositoryUrl>
